@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "346611965132",
+    "firebase_url": "https://labkitav2.firebaseio.com",
+    "project_id": "labkitav2",
+    "storage_bucket": "labkitav2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346611965132:android:5844a5d92c82f730",
+        "android_client_info": {
+          "package_name": "medis.ourlab.labkita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346611965132-togj82dfkpeqgmrd25k87urvka6lch8o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "medis.ourlab.labkita",
+            "certificate_hash": "9EAF4736F2A24C434C2F39CF03B09E10757A4B70"
+          }
+        },
+        {
+          "client_id": "346611965132-tpsanpfjcpc3tsrhspfj77dpgo988vin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1M5HoR4tRaZ1gRMliUmlzLOp6BETPvFs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346611965132-tpsanpfjcpc3tsrhspfj77dpgo988vin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#31b4ac</color>
+    <color name="colorPrimaryDark">#31b4ac</color>
+    <color name="colorAccent">#393939</color>
+    <color name="C2">#31b4ac</color>
+    <color name="C1">#ffffff</color>
+    <color name="C3">#393939</color>
+    <color name="C4">#a0a0a0</color>
+    <color name="C5">#d4d4d4</color>
+    <color name="C6">#d65151</color>
+    <color name="C7">#d4d651</color>
+    <color name="fafafa">#FAFAFA</color>
+
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="border_color">#393939</color>
+    <color name="background_color">#ffffff</color>
+
+    <color name="tabSelectedIconColor">@color/C2</color>
+    <color name="tabUnselectedIconColor">@color/C4</color>
+</resources>

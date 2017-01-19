@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Lab Kita</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email Address</string>
+    <string name="prompt_password"><i>Password</i></string>
+    <string name="action_sign_in">SIGN IN</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Logout</string>
+    <string name="forgot_password">I forgot my password</string>
+    <string name="order_list">Order List</string>
+    <string name="keep_me">Keep signed in</string>
+    <string name="err_msg_name">Enter password</string>
+    <string name="err_msg_email">Enter valid email address</string>
+</resources>

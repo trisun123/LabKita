@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="medis.ourlab.labkita.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@color/C2">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+        android:layout_height="match_parent"
+            android:src="@drawable/retina"
+        android:scaleType="fitXY"
+            android:fontFamily="sans-serif"
+            android:layout_width="match_parent"></ImageView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/C1"
+                    android:textSize="40dp"
+                    android:text="TOP TEXT"
+
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/namaebesar" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/C1"
+                        android:textSize="10dp"
+                        android:text="LOW TEXT"
+
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/motto" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+                <RelativeLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/token"
+                                android:id="@+id/imageView3"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/backgroundrightonly"
+                                android:paddingRight="20dp"
+                                android:paddingTop="10dp" />
+
+                            <TextView
+                                android:text="Token"
+                                android:fontFamily="sans-serif"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView4"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/backgroundrightonly"
+                                android:paddingRight="20dp" />
+                            <TextView
+                                android:text="0"
+                                android:fontFamily="sans-serif"
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/token"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/backgroundrightonly"
+                                android:paddingRight="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/mytools"
+                                android:id="@+id/imageView4"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/backgroundwhite"
+                                android:paddingTop="10dp" />
+
+                            <TextView
+                                android:text="My Tools"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView5"
+                                android:fontFamily="sans-serif"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@color/C1" />
+                            <TextView
+                                android:text="0"
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/tools"
+                                android:fontFamily="sans-serif"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@color/C1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:background="@color/C3">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:id="@+id/orderlist">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/orderlist"
+                        android:id="@+id/imageView"
+                        android:layout_weight="0.5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5" />
+
+                    <TextView
+                        android:text="Start Check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textColor="@color/C4"
+                        android:gravity="top|center"
+                        android:clickable="false" />
+                    </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/profilePic"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:baselineAlignBottom="false"
+            android:translationY="-40dp" >
+        </com.android.volley.toolbox.NetworkImageView> -->
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:baselineAlignBottom="false"
+            android:translationY="-40dp"
+            android:src="@drawable/orang"
+            >
+        </ImageView>
+
+    </FrameLayout>
+
+</RelativeLayout>

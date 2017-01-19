@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_weight="0.6"
+            android:layout_height="fill_parent"
+
+            android:background="@color/C3"></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_weight="0.4"
+            android:layout_height="fill_parent"
+
+
+            android:gravity="center"
+            android:background="@color/C2"
+            android:clickable="true"
+            android:id="@+id/pick_order"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:text="PICK ORDER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_weight="0.3"
+            android:layout_height="fill_parent"
+
+            >
+            <TextView
+                android:text="Patient"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/backgroundrightonly"
+
+                android:layout_marginLeft="5dp"
+                android:paddingRight="20dp"
+                android:gravity="center_vertical" />
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_weight="0.7"
+            android:layout_height="fill_parent"
+
+
+            android:gravity="center">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/layoutpasien">
+
+
+            </LinearLayout>
+        </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="fill_parent"
+
+                >
+                <TextView
+                    android:text="Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/backgroundrightonly"
+
+                    android:layout_marginLeft="5dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.7"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="center">
+                <TextView
+                    android:text="alamat pasien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/alamatpasien"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="fill_parent"
+
+                >
+                <TextView
+                    android:text="Lab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/backgroundrightonly"
+
+                    android:layout_marginLeft="5dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.7"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="left">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:text="Nama Lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:id="@+id/namalab"
+                        android:textColor="@color/C2"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:text="alamat lab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/C4"
+                        android:fontFamily="sans-serif"
+                        android:id="@+id/alamatlab"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/mem">
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="fill_parent"
+
+                >
+                <TextView
+                    android:text="Registered by Member"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/backgroundrightonly"
+
+                    android:layout_marginLeft="5dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.7"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="left">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="nama member"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/namamember"
+                    android:textColor="@color/C2"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

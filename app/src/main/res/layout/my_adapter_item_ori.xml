@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TableLayout
+
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:padding="10dp">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:background="@drawable/backgroundrightonly"
+            android:layout_marginRight="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutpasien">
+
+            <TextView
+                android:text="Nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/C2"
+                android:fontFamily="sans-serif"
+                android:id="@+id/namapasien"/>
+            <TextView
+                android:text="female, xx year old"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/C4"
+                android:fontFamily="sans-serif"
+                android:id="@+id/usiadangender"
+                android:paddingBottom="10dp" />
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:text="Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:background="@drawable/backgroundrightonly"
+        android:layout_marginRight="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical" />
+        <TextView
+            android:text="alamat pasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:id="@+id/alamatpasien"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:background="@drawable/backgroundrightonly"
+            android:layout_marginRight="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:text="Nama Lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/namalab"
+            android:textColor="@color/C2"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:text="alamat lab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/C4"
+            android:fontFamily="sans-serif"
+            android:id="@+id/alamatlab"/>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Registered by Member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:background="@drawable/backgroundrightonly"
+            android:layout_marginRight="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center_vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="nama member"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:id="@+id/namamember"
+            android:textColor="@color/C2"
+            android:fontFamily="sans-serif"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+    </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundtoponly">
+            <TextView
+                android:text="Invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+
+                android:paddingRight="20dp"
+                android:gravity="center_vertical" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="invoice number"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:id="@+id/invoice"
+                android:textColor="@color/C4"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+        </TableRow>
+<TableLayout>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundtoponly">
+            <TextView
+                android:text="Medical Check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:textColor="@color/C4"
+                android:gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Unit"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+
+                android:textColor="@color/C4"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Price"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+
+                android:textColor="@color/C4"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+        </TableRow>
+</TableLayout>
+</TableLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/medical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/labtest"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

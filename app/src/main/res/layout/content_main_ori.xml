@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="medis.ourlab.labkita.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@color/C2">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+        android:layout_height="fill_parent"
+            android:src="@drawable/retina"
+        android:scaleType="fitXY"
+            android:fontFamily="sans-serif"
+            android:layout_width="wrap_content"></ImageView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5">
+
+                <TextView
+                android:layout_height="match_parent"
+                android:textColor="@color/C1"
+                android:textSize="40dp"
+                android:text="TOP TEXT"
+
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/namaebesar" />
+            </RelativeLayout>
+
+
+
+                <RelativeLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:text="Token"
+                                android:fontFamily="sans-serif"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView4"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@color/C1"
+                                android:paddingRight="20dp" />
+                            <TextView
+                                android:text="Token"
+                                android:fontFamily="sans-serif"
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/token"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@color/C1"
+                                android:paddingRight="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:text="My Tools"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView5"
+                                android:fontFamily="sans-serif"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@color/C1"
+                                android:paddingLeft="20dp" />
+                            <TextView
+                                android:text="My Tools"
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/tools"
+                                android:fontFamily="sans-serif"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@color/C1"
+                                android:paddingLeft="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:background="@color/C3">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Order List"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/C4"
+                        android:gravity="center"
+                        android:id="@+id/orderlist"
+                        android:clickable="true" />
+                    <TextView
+                        android:text="Appointments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/appointments"
+                        android:layout_weight="1"
+                        android:textColor="@color/C4"
+                        android:gravity="center" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/profilePic"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:baselineAlignBottom="false"
+            android:translationY="-40dp" >
+        </com.android.volley.toolbox.NetworkImageView> -->
+        <medis.ourlab.labkita.FeedImageView
+            android:id="@+id/profilePic"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:baselineAlignBottom="false"
+            android:translationY="-40dp" >
+        </medis.ourlab.labkita.FeedImageView>
+
+    </FrameLayout>
+
+</RelativeLayout>

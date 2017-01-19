@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="2dp">
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/backgroundtopandbottom"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="fill_parent"
+
+                >
+                <TextView
+                    android:text="Invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+
+                    android:layout_marginLeft="5dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.7"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="left">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="invoice number"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/invoice"
+                    android:textColor="@color/C4"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.5"
+                android:layout_height="fill_parent"
+
+                >
+                <TextView
+                    android:text="Medical Check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+
+                    android:layout_marginLeft="5dp"
+
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.2"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Unit"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+ />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Price"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/inv_medcheck_items">
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.5"
+                android:layout_height="fill_parent"
+
+                >
+                <TextView
+                    android:text="Subtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+
+                    android:layout_marginLeft="5dp"
+
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.2"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/inv_medcheck_subtotal" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/backgroundtoponly"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.5"
+                android:layout_height="fill_parent"
+
+                >
+                <TextView
+                    android:text="Lab Test"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+
+                    android:layout_marginLeft="5dp"
+
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.2"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Unit"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Price"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/inv_labtest_items">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.5"
+                android:layout_height="fill_parent"
+
+                >
+                <TextView
+                    android:text="Subtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+
+                    android:layout_marginLeft="5dp"
+
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.2"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/inv_labtest_subtotal" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/backgroundtoponly"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.5"
+                android:layout_height="fill_parent"
+
+                >
+                <TextView
+                    android:text="TOTAL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+
+                    android:layout_marginLeft="5dp"
+
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.2"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="0.3"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/inv_total" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/backgroundwithborder"
+            android:clickable="true"
+            android:id="@+id/pick_order"
+            >
+
+
+                <TextView
+                    android:text="GOT THE ORDER"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/C2" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
